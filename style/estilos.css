@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#logo {
+  z-index: 4000000;
+  height: 3rem;
+  min-width: 170px;
+}
+#logo a img {
+  display: block;
+  width: 137px;
+  height: 4rem;
+}
+
+@media only screen and (min-width: 651px) {
+  .close, .menu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #menu__check:not(:checked) ~ nav {
+    display: none;
+  }
+  #menu_check:checked ~ nav {
+    display: block;
+  }
+  .close {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  #menu__check:checked ~ label .menu {
+    display: none;
+  }
+  #menu__check:checked ~ label .close {
+    display: block;
+  }
+  nav {
+    text-align: center;
+    background-color: orange !important;
+    height: 100vh !important;
+    width: 100% !important;
+    z-index: 999;
+    opacity: 0.9;
+  }
+  nav ul {
+    margin: auto;
+  }
+  nav ul li {
+    display: block;
+    font-weight: 800;
+    font-size: xx-large;
+  }
+  nav li a:hover {
+    color: white;
+  }
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 3.6rem;
+  padding-top: 1.2rem;
+  border-bottom: 2px solid #ccc;
+  background-color: #fff;
+  width: 100vw;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+nav a:hover {
+  color: orange;
+}
+nav ul {
+  margin-top: 1xpx;
+}
+nav li {
+  display: inline;
+  font-weight: 600;
+  padding: 0.5rem;
+}
+
+#home {
+  height: 100vh;
+}
+
+#textHome {
+  width: 560px;
+  height: 100%;
+  z-index: -1;
+  transform: translateY(-65vh) translateZ(0px) scale(1);
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 60vw;
+  margin-left: 20%;
+  align-content: flex-start;
+}
+#textHome p a {
+  text-decoration: none;
+  color: #000;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+#textHome p a:hover {
+  text-decoration: none;
+  color: #000;
+  color: orange;
+}
+
+footer {
+  background-color: #fff;
+  height: 4rem;
+}
+footer ul {
+  float: right;
+}
+footer ul li {
+  display: inline;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: #000;
+  transition-property: color;
+  transition-duration: 0.5s;
+  font-weight: 600;
+}
+footer a:hover {
+  color: orange;
+}
+
+#menu__check {
+  display: none;
+}
+
+.close, .menu {
+  width: 1rem;
+  position: absolute;
+  cursor: pointer;
+  margin: 1rem;
+  right: 0;
+  z-index: 99999;
+  margin-top: -28px;
+  margin-right: 20px;
+}
+
+header {
+  height: 3.6rem;
+}
+
+.parallaxHome {
+  background-image: url("/assets/images/homeParallax.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#servicios {
+  height: 100%;
+  margin-top: 16rem;
+  margin-right: 12rem;
+  margin-bottom: 20rem;
+}
+
+#boxServicios {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8rem;
+  margin-left: 6rem;
+  margin-right: 8rem;
+}
+
+.boxText {
+  width: 80%;
+  font-weight: 600;
+  margin-top: 6rem;
+  margin-left: 10%;
+}
+
+.servicioCard img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 16rem;
+}
+
+.servicioCard {
+  margin-bottom: 4rem;
+}
+
+#teamNL {
+  height: 100%;
+  margin-top: 16rem;
+  margin-right: 12rem;
+  margin-bottom: 20rem;
+}
+
+#boxTeamNL {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  margin-left: 6rem;
+  margin-right: 8rem;
+}
+
+.boxTextNL {
+  width: 80%;
+  font-weight: 600;
+  margin-top: -10rem !important;
+  margin-left: 10%;
+}
+
+.TeamNLCard img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 16rem;
+}
+
+.TeamNLCard {
+  margin-bottom: 4rem;
+}
+
+#contacto {
+  height: 100%;
+}
+
+#contactoBoxForm {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  height: 650px;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  z-index: 4;
+  transform: translateY(-80vh) translateZ(0px) scale(1);
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 40vw;
+  margin-left: 30%;
+  align-content: flex-start;
+}
+
+.parallaxContacto {
+  background-image: url("/assets/images/contacto_parallax.jpeg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font: inherit;
+  color: #000;
+  background-color: transparent;
+  outline: 2px solid #000;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(10px, 10px);
+  transition: transform 0.25s;
+}
+
+.input:focus + .input-label,
+.input:valid + .input-label {
+  transform: translate(10px, -14px) scale(0.8);
+  color: #000000;
+  padding-inline: 5px;
+  background-color: #ff9d00;
+}
+
+.input:is(:focus, :valid) {
+  outline-color: #ff9d00;
+}
+
+#vision {
+  background-image: url(../assets/images/homeParallax.jpg) cover;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+}
+
+#textVision {
+  width: 560px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 80vw;
+  margin-left: 10%;
+}
+#textVision p a {
+  text-decoration: none;
+  color: #000;
+  transition-property: color;
+  transition-duration: 0.5s;
+}
+#textVision p a:hover {
+  text-decoration: none;
+  color: #000;
+  color: orange;
+}
+
+/* .row>*{
+  width: 0!important;
+} *//*# sourceMappingURL=estilos.css.map */

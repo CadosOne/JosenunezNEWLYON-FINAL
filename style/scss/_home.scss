@@ -1,0 +1,25 @@
+#home {
+  height: 100vh;
+}
+#textHome {
+  width: 560px;
+  height: 100%;
+  z-index: -1;
+  transform: translateY(-65vh) translateZ(0px) scale(1);
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 60vw;
+  margin-left: 20%;
+  align-content: flex-start;
+  p a {
+    text-decoration: none;
+    color: #000;
+    transition-property: color;
+    transition-duration: 0.5s;
+    &:hover {
+      text-decoration: none;
+      color: #000;
+      color: orange;
+    }
+  }
+}

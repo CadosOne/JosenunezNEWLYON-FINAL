@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 3.6rem;
+  padding-top: 1.2rem;
+  border-bottom: 2px solid #ccc;
+  background-color: #fff;
+  width: 100vw;
+  a {
+    text-decoration: none;
+    color: black;
+    transition-property: color;
+    transition-duration: 0.5s;
+    &:hover {
+      color: orange;
+    }
+  }
+  ul {
+    
+    margin-top: 1xpx;
+  }
+  li {
+    display:inline;
+    font-weight: 600;
+    padding: 0.5rem;
+  }
+}

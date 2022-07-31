@@ -1,0 +1,53 @@
+@media only screen and (min-width:651px){
+  .close,.menu{
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 650px) {
+  #menu__check:not(:checked) ~ nav {
+    display: none;
+  }
+  #menu_check:checked ~ nav {
+    display:block;
+  }
+  .close{
+    display: none;
+  }
+  .menu{
+    display:block; 
+  }
+
+#menu__check:checked ~ label .menu{
+  display: none;
+}
+#menu__check:checked ~label .close{
+  display: block;
+}
+nav {
+  text-align: center;
+  background-color: orange!important;
+  height: 100vh!important;
+  width: 100%!important;
+  z-index: 999;
+  opacity: 0.9;
+
+
+
+}
+nav ul{
+  margin:auto;
+}
+nav ul li{
+  display: block;
+  font-weight: 800;
+  font-size: xx-large;
+}
+nav li a:hover{
+  color: white;
+}
+
+
+
+
+}

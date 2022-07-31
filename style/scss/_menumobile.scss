@@ -1,0 +1,14 @@
+#menu__check{
+    display: none;
+}
+.close,.menu{
+    
+    width: 1rem;
+    position: absolute;
+    cursor: pointer;
+    margin: 01rem;
+    right: 0;
+    z-index: 99999;
+    margin-top: -28px;
+    margin-right: 20px;
+}
